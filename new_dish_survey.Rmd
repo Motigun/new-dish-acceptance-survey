@@ -2,16 +2,19 @@
 title: "New dish survey analysis"
 author: "Chester Wang"
 date: "`r Sys.Date()`"
-output: html_document
+output:
+  html_document: default
+  pdf_document: default
+  word_document: default
 ---
 
-```{r echo=FALSE, out.width = "600px"}
+```{r echo=FALSE, out.width = "460px"}
 knitr::include_graphics("new_dish.jpg") 
 ```
 
 ### Abstract
 
-##### This study examined the correlation between habits of vegetable consumption and acceptance of an innovative dish whcih incorporated nutrients extracted from fruits and vegetables by using molecular gastronomy technique. A survey of 250 respondents were collected and analyzed in this report. Respondents were further segmented by age, daily vegetable consumption, and vegetable supplement use in this analysis to identify the potential key factors influencing acceptance of the new dish.
+##### This study examined the correlation between habits of vegetable consumption and acceptance of an innovative dish which incorporated nutrients extracted from fruits and vegetables by using molecular gastronomy technique. A survey of 250 respondents were collected and analyzed in this report. Respondents were further segmented by age, daily vegetable consumption, and vegetable supplement use in this analysis to identify the potential key factors influencing acceptance of the new dish.
 
 ##### In this analysis, rates of positive response from different segmentations of respondents ranged from 38.7% to 60.6 %, while rates of negative responses showed a narrower distribution between 10.6% to 24.3%. Results indicated that half of the respondents provided positive feedback for the dish, and daily vegetable consumption was identified as the key factor affecting the acceptance of the new dish. 
 
@@ -468,7 +471,7 @@ ggplot(acceptance_by_veg_line, aes(x = veg_consump, y = sum, group = group,
 
 #### 4. New dish acceptance by vegetable supplement use
 
-##### Analysis of acceptance of respondents segmented by vegetable supplement use indicated that, rates of positive responses of survey participants that responded "Never", "Rarely", and "Sometimes" were 39.6%, 56.2%, and 44.8% respectively. Rates of negative responses from these three groups were 18.8%, 13.4$, and 18.9%. These results revealed that rate of acceptance was the highest from those who "Rarely" take vegetable supplements.
+##### Analysis of acceptance of respondents segmented by vegetable supplement use indicated that, rates of positive responses of survey participants that responded "Never", "Rarely", and "Sometimes" were 39.6%, 56.2%, and 44.8% respectively. Rates of negative responses from these three groups were 18.8%, 13.4%, and 18.9% respectively. These results revealed that rate of acceptance was the highest from those who "Rarely" take vegetable supplements.
 
 ##### Results from the groups "Often" and "Always" in frequencies of vegetable supplement use were excluded in the analysis, as sample sizes were both less than 30 from these two groups. 
 
@@ -558,14 +561,10 @@ ggplot(acceptance_by_sup_line, aes(x = sup_use, y = sum, group = group,
 
 ### Reference
 
-##### Health Promotion Administration, R.O.C., 2022. Nutrition and Health Survey in Taiwan. [Online]
-##### Available at: https://www.hpa.gov.tw/Pages/List.aspx?nodeid=3998
+##### Health Promotion Administration, R.O.C., 2022. Nutrition and Health Survey in Taiwan. Available at: https://www.hpa.gov.tw/Pages/List.aspx?nodeid=3998
 
-##### Ministry of Health and Welfare, R.O.C., 2018. Dietary Guideline. [Online]
-##### Available at: https://www.hpa.gov.tw/Pages/EBook.aspx?nodeid=1208
+##### Ministry of Health and Welfare, R.O.C., 2018. Dietary Guideline. Available at: https://www.hpa.gov.tw/Pages/EBook.aspx?nodeid=1208
 
-##### Ministry of Health and Welfare, R.O.C., 2020. School Lunch Contents and Nutrition Guideline. [Online]
-##### Available at: https://www.hpa.gov.tw/Pages/ashx/File.ashx?FilePath=~/File/Attach/731/File_16593.pdf
+##### Ministry of Health and Welfare, R.O.C., 2020. School Lunch Contents and Nutrition Guideline. Available at: https://www.hpa.gov.tw/Pages/ashx/File.ashx?FilePath=~/File/Attach/731/File_16593.pdf
 
-##### International Trade Administration, 2023. Taiwan Dietary Supplements Market. [Online]
-##### Available at: https://www.trade.gov/market-intelligence/taiwan-dietary-supplements-market
+##### International Trade Administration, 2023. Taiwan Dietary Supplements Market. Available at: https://www.trade.gov/market-intelligence/taiwan-dietary-supplements-market
